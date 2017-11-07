@@ -20,7 +20,6 @@ class Gallery extends React.Component {
       } else {
         const images = res.data.map(obj => obj)
         _this.setState({ images: images })
-        console.log(_this.state.images)
       }
     })
   }
@@ -31,7 +30,7 @@ class Gallery extends React.Component {
         {this.state.images.map((image) =>
           <figure key={image.id}>
             <Image key={image.id} url={image.images.thumbnail.url} />
-            <Meta key={image.id} date={image.created_time} />
+            <Meta key={image.id} date={image.created_time} location={image.location} />
           </figure>
         )}
       </section>
