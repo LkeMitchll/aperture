@@ -1,0 +1,13 @@
+.wrapper {
+  max-width: 60em;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+}
+
+.item {
+  width: calc(33.33% - 1.6rem);
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}

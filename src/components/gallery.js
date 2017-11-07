@@ -2,6 +2,7 @@ import React from 'react'
 import jsonp from 'jsonp'
 import Image from './image.js'
 import Meta from './meta.js'
+import styles from './gallery.css'
 
 class Gallery extends React.Component {
   constructor(props) {
@@ -26,9 +27,9 @@ class Gallery extends React.Component {
 
   render() {
     return (
-      <section>
+      <section className={styles.wrapper}>
         {this.state.images.map((image) =>
-          <figure key={image.id}>
+          <figure className={styles.item} key={image.id}>
             <Image key={image.id} image={image.images} />
             <Meta key={image.id} date={image.created_time} location={image.location} />
           </figure>
