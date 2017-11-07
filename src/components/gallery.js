@@ -29,7 +29,7 @@ class Gallery extends React.Component {
       <section>
         {this.state.images.map((image) =>
           <figure key={image.id}>
-            <Image key={image.id} url={image.images.thumbnail.url} />
+            <Image key={image.id} image={image.images} />
             <Meta key={image.id} date={image.created_time} location={image.location} />
           </figure>
         )}
