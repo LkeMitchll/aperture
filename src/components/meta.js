@@ -3,9 +3,9 @@ import React from 'react'
 class Meta extends React.Component {
   render() {
     return (
-      <footer>
+      <figcaption>
         <p>{this.props.date}</p>
-      </footer>
+      </figcaption>
     )
   }
 }
