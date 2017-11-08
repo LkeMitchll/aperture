@@ -5,6 +5,10 @@
   margin: 0 -0.8rem;
 }
 
+.loading {
+  height: 100vh;
+}
+
 .item {
   margin: 0 0.8rem;
   width: calc(33.33% - 1.6rem);

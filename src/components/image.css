@@ -1,4 +1,6 @@
 .content {
   display: block;
   width: 100%;
+  min-height: 300px;
+  background-color: rgb(180, 180, 180);
 }

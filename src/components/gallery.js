@@ -9,8 +9,13 @@ class Gallery extends React.Component {
     super(props)
 
     this.state = {
+      loading: true,
       images: []
     }
+  }
+
+  loading() {
+    return this.state.loading ? styles.loading : styles.loaded
   }
 
   componentWillMount() {
@@ -20,14 +25,14 @@ class Gallery extends React.Component {
         window.alert(err.message)
       } else {
         const images = res.data.map(obj => obj)
-        _this.setState({ images: images })
+        _this.setState({ loading: false, images: images })
       }
     })
   }
 
   render() {
     return (
-      <section className={styles.wrapper}>
+      <section className={[styles.wrapper + ' ' + this.loading()]}>
         {this.state.images.map((image) =>
           <figure className={styles.item} key={image.id}>
             <Image key={image.id} image={image.images} />
