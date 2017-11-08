@@ -11,5 +11,10 @@
 
 .item {
   margin: 0 0.8rem;
-  width: calc(33.33% - 1.6rem);
+  width: calc(50% - 1.6rem);
+
+  @media (max-width: 40em) {
+    margin: 0 1.6rem;
+    width: calc(100% - 3.2rem);
+  }
 }
