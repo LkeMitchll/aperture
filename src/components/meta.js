@@ -23,7 +23,7 @@ class Meta extends React.Component {
   render() {
     return (
       <figcaption>
-        <p>{this.state.date}</p>
+        <time>{this.state.date}</time>
         <p>{this.state.location}</p>
       </figcaption>
     )
