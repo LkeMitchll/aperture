@@ -1,4 +1,37 @@
+@font-face {
+  font-family: "Tiempos Text Regular";
+  font-weight: 400;
+  src: url("../assets/fonts/TiemposTextWeb-Regular.eot");
+  src:
+    url("../assets/fonts/TiemposTextWeb-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/TiemposTextWeb-Regular.woff2") format("woff2"),
+    url("../assets/fonts/TiemposTextWeb-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Tiempos Text Semibold";
+  font-weight: 600;
+  src: url("../assets/fonts/TiemposTextWeb-Semibold.eot");
+  src:
+    url("../assets/fonts/TiemposTextWeb-Semibold.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/TiemposTextWeb-Semibold.woff2") format("woff2"),
+    url("../assets/fonts/TiemposTextWeb-Semibold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Courier Prime Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../assets/fonts/CourierPrime-Medium.eot");
+  src:
+    url("../assets/fonts/CourierPrime-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/CourierPrime-Medium.woff") format("woff"),
+    url("../assets/fonts/CourierPrime-Medium.ttf") format("truetype"),
+    url("../assets/fonts/CourierPrime-Medium.svg#CourierPrime-Medium") format("svg");
+}
+
 .wrapper {
+  font-family: "Tiempos Text Regular";
   max-width: 60em;
   margin: 0 auto;
 }
