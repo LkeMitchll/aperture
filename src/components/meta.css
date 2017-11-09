@@ -1,0 +1,17 @@
+@value vars: "../shared/css/variables.css";
+@value spacing, spacing-small, color-primary from vars;
+
+.wrapper {
+  composes: spacing-primary from "../shared/css/layout.css";
+  padding-bottom: spacing;
+  border-bottom: 2px solid color-primary;
+}
+
+.location {
+  margin-bottom: spacing-small;
+}
+
+.date {
+  composes: font-secondary from "../shared/css/typography.css";
+  composes: size-secondary from "../shared/css/typography.css";
+}

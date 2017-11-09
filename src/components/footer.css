@@ -1,3 +1,4 @@
 .text {
+  composes: size-secondary from "../shared/css/typography.css";
   font-family: "Courier Prime Medium";
 }

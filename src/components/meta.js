@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import convertDate from '../shared/convert_date.js'
+import styles from './meta.css'
 
 class Meta extends React.Component {
   constructor(props) {
@@ -22,9 +23,9 @@ class Meta extends React.Component {
 
   render() {
     return (
-      <figcaption>
-        <time>{this.state.date}</time>
-        <p>{this.state.location}</p>
+      <figcaption className={styles.wrapper}>
+        <p className={styles.location}>{this.state.location}</p>
+        <time className={styles.date}>{this.state.date}</time>
       </figcaption>
     )
   }

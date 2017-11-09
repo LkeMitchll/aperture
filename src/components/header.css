@@ -1,3 +1,6 @@
 .title {
+  composes: size-primary from "../shared/css/typography.css";
+  composes: font-bold from "../shared/css/typography.css";
+  composes: spacing-secondary from "../shared/css/layout.css";
   font-family: "Tiempos Text Semibold";
 }

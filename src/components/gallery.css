@@ -1,8 +1,12 @@
+@value vars: "../shared/css/variables.css";
+@value spacing-large, spacing-small, small-viewport from vars;
+
 .wrapper {
+  composes: spacing-secondary from "../shared/css/layout.css";
   display: flex;
   flex-flow: row wrap;
   justify-content: start;
-  margin: 0 -0.8rem;
+  margin: 0 -0.8rem spacing-large;
 }
 
 .loading {
@@ -10,10 +14,10 @@
 }
 
 .item {
-  margin: 0 0.8rem;
+  margin: 0 spacing-small;
   width: calc(50% - 1.6rem);
 
-  @media (max-width: 40em) {
+  @media (max-width: small-viewport) {
     margin: 0 1.6rem;
     width: calc(100% - 3.2rem);
   }

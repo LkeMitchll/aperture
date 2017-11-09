@@ -1,0 +1,26 @@
+@value vars: "./variables.css";
+@value spacing, spacing-small, spacing-large, small-viewport from vars;
+
+.flex {
+  display: flex;
+}
+
+.spacing-primary {
+  margin: 0 0 spacing;
+
+  @media (max-width: small-viewport) {
+    margin: 0 0 spacing-small;
+  }
+}
+
+.spacing-secondary {
+  margin: 0 0 spacing-large;
+
+  @media (max-width: small-viewport) {
+    margin: 0 0 spacing;
+  }
+}
+
+.hspacing-primary {
+  margin-right: spacing-small;
+}
