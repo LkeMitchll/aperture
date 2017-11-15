@@ -1,10 +1,27 @@
 @value vars: "../shared/css/variables.css";
-@value spacing, spacing-small, color-primary from vars;
+@value spacing, spacing-small, spacing-large, color-primary, small-viewport from vars;
 
 .wrapper {
   composes: spacing-primary from "../shared/css/layout.css";
+  padding-left: spacing;
   padding-bottom: spacing;
-  border-bottom: 2px solid color-primary;
+  position: relative;
+  z-index: 100;
+}
+
+.odd {
+  padding-left: spacing;
+}
+
+.even {
+  padding-left: spacing-large;
+}
+
+.odd,
+.even {
+  @media (max-width: small-viewport) {
+    padding-left: 0;
+  }
 }
 
 .location {
@@ -14,4 +31,5 @@
 .date {
   composes: font-secondary from "../shared/css/typography.css";
   composes: size-secondary from "../shared/css/typography.css";
+  margin: 0;
 }

@@ -1,0 +1,20 @@
+@value vars: "../shared/css/variables.css";
+@value spacing, small-viewport from vars;
+
+.rectangle {
+  position: absolute;
+  bottom: spacing;
+  z-index: 1;
+
+  @media (max-width: small-viewport) {
+    display: none;
+  }
+}
+
+.even {
+  right: -1.6rem;
+}
+
+.odd {
+  left: -1.6rem;
+}

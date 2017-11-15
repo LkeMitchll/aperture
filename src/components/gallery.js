@@ -2,6 +2,7 @@ import React from 'react'
 import jsonp from 'jsonp'
 import Image from './image.js'
 import Meta from './meta.js'
+import Polaroid from './polaroid.js'
 import styles from './gallery.css'
 
 class Gallery extends React.Component {
@@ -33,10 +34,11 @@ class Gallery extends React.Component {
   render() {
     return (
       <section className={[styles.wrapper + ' ' + this.loading()]}>
-        {this.state.images.map((image) =>
+        {this.state.images.map((image, index) =>
           <figure className={styles.item} key={image.id}>
-            <Image key={image.id} image={image.images} />
-            <Meta key={image.id} date={image.created_time} location={image.location} />
+            <Image image={image.images} />
+            <Meta index={index} date={image.created_time} location={image.location} />
+            <Polaroid index={index}/>
           </figure>
         )}
       </section>
