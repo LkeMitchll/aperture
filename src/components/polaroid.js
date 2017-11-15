@@ -13,7 +13,8 @@ class Polaroid extends React.Component {
   }
 
   componentWillMount() {
-    var height = Math.floor(Math.random() * (600 - 200)) + 200
+    var height = Math.floor(Math.random() * (90 - 50)) + 50
+    var heightRounded = Math.round(height / 10) * 10
     var oddEven = ''
 
     if (this.props.index % 2 == 0) {
@@ -23,7 +24,7 @@ class Polaroid extends React.Component {
     }
 
     this.setState({
-      height: height,
+      height: heightRounded + '%',
       oddEven: oddEven
     })
   }
@@ -38,7 +39,7 @@ class Polaroid extends React.Component {
         <g stroke="black">
           <rect
             width="100%"
-            height={this.state.height}
+            height="100%"
             fill="transparent"
             strokeWidth="2">
           </rect>
