@@ -6,7 +6,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: start;
-  margin: 0 -0.8rem spacing-large;
+  margin: 0 -0.8rem;
 }
 
 .loading {

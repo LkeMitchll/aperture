@@ -1,4 +1,19 @@
+@value vars: "../shared/css/variables.css";
+@value spacing-small, color-primary, small-viewport from vars;
+
 .text {
   composes: size-secondary from "../shared/css/typography.css";
   font-family: "Courier Prime Medium";
+
+  @media (max-width: small-viewport) {
+    padding-left: spacing-small;
+  }
+}
+
+.link {
+  color: color-primary;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
