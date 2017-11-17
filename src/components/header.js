@@ -4,7 +4,7 @@ import styles from './header.css'
 class Header extends React.Component {
   render() {
     return (
-      <header>
+      <header className={styles.wrapper}>
         <h1 className={styles.title}>Aperture</h1>
       </header>
     )
