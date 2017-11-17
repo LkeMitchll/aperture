@@ -41,7 +41,7 @@ class Polaroid extends React.Component {
             width="100%"
             height="100%"
             fill="transparent"
-            strokeWidth="2">
+            strokeWidth="3">
           </rect>
         </g>
       </svg>
