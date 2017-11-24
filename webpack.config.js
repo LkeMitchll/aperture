@@ -69,7 +69,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: 'src/index.ejs',
-      title: 'Swansong'
+      title: 'Aperture'
     }),
     new UglifyJSPlugin(),
     new webpack.DefinePlugin({
